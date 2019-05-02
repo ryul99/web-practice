@@ -1,0 +1,13 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ryul99",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/cli": "^3.7.0",
+    "@vue/cli-init": "^3.7.0",
+    "nuxt": "^2.6.3",
+    "vue": "^2.6.10"
+  }
+}
