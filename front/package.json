@@ -1,13 +1,25 @@
 {
   "name": "front",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "ryul99",
-  "license": "MIT",
+  "description": "Nuxt.js project",
+  "author": "Changmin Choi <cmchoi9901@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
   "dependencies": {
-    "@vue/cli": "^3.7.0",
-    "@vue/cli-init": "^3.7.0",
-    "nuxt": "^2.6.3",
-    "vue": "^2.6.10"
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
