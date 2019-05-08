@@ -54,6 +54,15 @@ def signout(request: HttpRequest):
     return HttpResponse()
 
 
+@ensure_csrf_cookie
+def verify_session(request: HttpRequest):
+    if request.method != 'GET':
+        return HttpResponseNotAllowed(['GET'])
+    if not request.user.is_authenticated:
+        return HttpResponseForbidden()
+    return JsonResponse(request.user.as_dict())
+
+
 @allow_request(['GET', 'POST'])
 @authenticate
 def post_list(request: HttpRequest):
